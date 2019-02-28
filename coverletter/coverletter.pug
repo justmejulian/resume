@@ -1,0 +1,42 @@
+include ../private-mixins.pug
+
+#title
+  h1.header-title Julian Visser
+  #contact
+    .contact-item.contact-item-with-border
+      +dob()
+    //.contact-item.contact-item-with-border
+    .contact-item
+      +web()
+    //- .contact-item.contact-item-with-border
+    //-   +email()
+    //- .contact-item
+    //-   +phone()
+
+#container    
+  #date (Date)
+
+  #hiring
+    .hiring-item  (Name of Hiring Mangager, Title)
+    .hiring-item  (Name of Company)
+    .hiring-item  (Address)
+    .hiring-item  (City)
+            
+  #greeting To Whom It May Concern
+  
+  #text
+    include:markdown-it ./dummy.md
+        
+    #regards    
+      //- :markdown-it
+      //-   Freundliche Grüsse
+      p Sincerely,
+        
+      +signature()
+      
+      p Julian Visser
+#disclaimer Made using HTML/CSS -&nbsp;
+  a(href="https://github.com/justmejulian/resume", target="_blank") Code source
+
+style
+  include:scss ./style/main.scss
