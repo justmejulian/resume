@@ -1,0 +1,10 @@
+# Mac files
+.DS_Store
+
+# Temp files
+*_temp.html
+
+# Private info
+private-mixins.pug
+signature_real.png
+./md-files
