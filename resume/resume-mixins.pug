@@ -1,0 +1,16 @@
+mixin timeline-item(title, place, address, from_date, to_date)
+  .timeline-item
+    h3= title
+      span.date
+        if from_date
+          = from_date
+        if to_date
+          = " - " + to_date
+    div.item-location
+      if place
+        span.place= place
+      if address
+        span.address= address
+    if block
+      .description
+        block

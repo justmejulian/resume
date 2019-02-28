@@ -1,0 +1,96 @@
+include ../private-mixins.pug
+include resume-mixins.pug
+
+#title
+  h1.header-title Julian Visser
+  h2.header-subtitle Computer Scientist
+  
+#photo
+  img(src='./img/me_light.png')
+            
+#container      
+        
+  .timeline-outercontainer
+    .timeline-container
+      h2.section-title Education
+      +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2016", "July 2019")
+        :markdown-it
+          - Bachelor thesis: Agile development using ReactJS and NodeJS
+        
+        //- Major: Mobile App Development and Software Security 
+      +timeline-item("Higher School Certificate", "Berufsmaturitätsschule BMZ", "Zurich", "2011", "2014")
+      +timeline-item("Vocational school", "Technische Berufsschule TBZ", "Zurich", "2011", "2014")
+        :markdown-it
+          - Hardware and network technology
+      +timeline-item("High School", "Baumackerschule", "Oerlikon", "2009", "2011")
+      
+  .timeline-outercontainer
+    .timeline-container
+      h2.section-title Work Experience
+      
+      +timeline-item("Supervisor","Cambridge Assessment English","Winterthur", "2016", "Present")
+        :markdown-it
+          - Instruct and co-ordinate exams and exam staff
+          - Train new supervisors and invigilators
+      +timeline-item("Volunteer","ITH San Diego & Montanita Spanish School","USA & Ecuador", "2015", "2016")
+        :markdown-it
+          - Front Desk: manage reservations, check-in, arrange payments
+          - Guest Services: guest relations, organising activities
+      +timeline-item("Military service","Sergeant, Military Police Grenadier","Aarau", "2014", "2015")
+        :markdown-it
+          - Prepare and teach lessons
+      +timeline-item("Apprenticeship IT (SYS)", "Siemens Schweiz AG", "Zurich", "2011", "2014")
+        :markdown-it
+          - Departments: Software Deployment, Network Security
+          - IPA: Out-of-band management using pfSense
+      
+
+#sidebar
+  #sidebar-container
+    #contact
+      h2.section-title Personal Data
+      .sidebar-item
+        +dob()
+      <br>
+      .sidebar-item justmejulian.github.io
+      //- <br>
+      //- .sidebar-item
+      //-   +email()
+      //- .sidebar-item
+      //-   +phone()
+      <br>
+      .sidebar-item Nationality:
+      .sidebar-item South Africa
+      .sidebar-item Switzerland
+    
+    #skill
+      .container
+        h2.section-title Skills
+        .sidebar-item JavaScript Full Stack Development,
+        .sidebar-subitem (<a href="https://github.com/zhaw-timetable/zhawo">bachelor thesis</a>)
+        .sidebar-item Various programming languages,
+        .sidebar-subitem (<a href="https://justmejulian.github.io/cloc">plot of lines programmed</a>)
+        .sidebar-item Creativity, Public speaking
+        
+    
+    #language
+      .container
+        h2.section-title Languages
+        .sidebar-item English (Native)
+        .sidebar-item German (Native)
+    
+    #hobby
+      .container
+        h2.section-title Hobbies
+        .sidebar-item Rugby, Crossfit, hiking, running, surfing, reading
+        
+    #references
+      .container
+        h2.section-title references
+        .sidebar-item On request
+
+#disclaimer Made using HTML/CSS -&nbsp;
+  a(href="https://github.com/justmejulian/resume", target="_blank") Code source
+
+style
+  include:scss ./style/main.scss

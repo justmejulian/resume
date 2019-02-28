@@ -1,0 +1,47 @@
+#sidebar {
+  margin-top: $boarder-padding;
+  border-top: $stroke;
+  grid-area: 2/2;
+  display: flex;
+}
+
+#sidebar-container {
+  flex-grow: 1;
+  margin-top: $boarder-padding;
+  border-left: $stroke;
+}
+
+#contact {
+  padding-left: $spacing-small;
+}
+
+.sidebar-item {
+  padding-bottom: 3px;
+}
+.sidebar-subitem {
+  padding-bottom: 3px;
+  font-size: 8pt;
+  font-weight: $light-weight;
+}
+
+.container {
+  margin-left: $spacing-small;
+  padding-top: $boarder-padding;
+  border-top: $stroke;
+}
+
+#skill {
+  margin-top: $boarder-padding;
+}
+
+#hobby {
+  margin-top: $boarder-padding;
+}
+
+#language {
+  margin-top: $boarder-padding;
+}
+
+#references {
+  margin-top: $boarder-padding;
+}
