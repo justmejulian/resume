@@ -14,7 +14,7 @@ Pug – robust, elegant, feature rich template engine for Node.js
 
 https://pugjs.org/api/getting-started.html
 
-## Font
+## Font
 
 San Francisco. The system font for iOS, macOS, tvOS, and watchOS.
 
