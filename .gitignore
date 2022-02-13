@@ -3,9 +3,15 @@
 
 # Temp files
 *_temp.html
+*.htm
+*.pdf
 
 # Private info
 private-mixins.pug
 signature_real.png
 
 /coverletter/md-files/
+
+/node_modules/
+
+*.pdf
