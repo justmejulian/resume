@@ -6,44 +6,48 @@ include resume-mixins.pug
   h2.header-subtitle Computer Scientist
   
 #photo
-  img(src='./img/me_light.png')
+  img(src='./img/me_ZHAW.png')
             
-#container      
-        
-  .timeline-outercontainer
-    .timeline-container
-      h2.section-title Education
-      +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2016", "July 2019")
-        :markdown-it
-          - Bachelor thesis: Agile development using ReactJS and NodeJS
-        
-        //- Major: Mobile App Development and Software Security 
-      +timeline-item("Higher School Certificate", "Berufsmaturitätsschule BMZ", "Zurich", "2011", "2014")
-      +timeline-item("Vocational school", "Technische Berufsschule TBZ", "Zurich", "2011", "2014")
-        :markdown-it
-          - Hardware and network technology
-      +timeline-item("High School", "Baumackerschule", "Oerlikon", "2009", "2011")
-      
+#container
+
   .timeline-outercontainer
     .timeline-container
       h2.section-title Work Experience
       
-      +timeline-item("Supervisor","Cambridge Assessment English","Winterthur", "2016", "Present")
+      +timeline-item("Full Stack Software Engineer","Open Systems","Zurich", "2019", "December 2021")
+        :markdown-it
+          - Ticketing frontend in a modern React/Redux/PostCSS stack
+          - Spring-based API framework, deployed on Docker Swarm
+      
+      +timeline-item("Supervisor","Cambridge Assessment English","Winterthur", "2016", "2019")
         :markdown-it
           - Instruct and co-ordinate exams and exam staff
           - Train new supervisors and invigilators
+
       +timeline-item("Volunteer","ITH San Diego & Montanita Spanish School","USA & Ecuador", "2015", "2016")
-        :markdown-it
-          - Front Desk: manage reservations, check-in, arrange payments
-          - Guest Services: guest relations, organising activities
+
       +timeline-item("Military service","Sergeant, Military Police Grenadier","Aarau", "2014", "2015")
-        :markdown-it
-          - Prepare and teach lessons
+
       +timeline-item("Apprenticeship IT (SYS)", "Siemens Schweiz AG", "Zurich", "2011", "2014")
         :markdown-it
           - Departments: Software Deployment, Network Security
           - IPA: Out-of-band management using pfSense
+        
+  .timeline-outercontainer
+    .timeline-container
+      h2.section-title Education
       
+      +timeline-item("Masters's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2021", "Present")
+
+      +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2016", "2019")
+        :markdown-it
+          - Bachelor thesis: PWA using ReactJS and NodeJS
+
+      +timeline-item("Higher School Certificate", "Berufsmaturitätsschule BMZ", "Zurich", "2011", "2014")
+      
+      +timeline-item("Vocational school", "Technische Berufsschule TBZ", "Zurich", "2011", "2014")
+
+      +timeline-item("High School", "Baumackerschule", "Oerlikon", "2009", "2011")
 
 #sidebar
   #sidebar-container
