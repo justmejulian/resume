@@ -1,0 +1,14 @@
+{
+  "name": "Resume Julian Visser",
+  "version": "1.0.0",
+  "description": "This is my Resume made using RelaxedJS.",
+  "dependencies": {
+    "relaxedjs": "^0.2.4"
+  },
+  "scripts": {
+    "watch-resume": "relaxed ./resume/resume.pug",
+    "watch-coverletter": "relaxed ./coverletter/coverletter.pug",
+    "build-resume": "relaxed ./resume/resume.pug  --build-once",
+    "build-coverletter": "relaxed ./coverletter/coverletter.pug  --build-once"
+  }
+}
