@@ -6,7 +6,7 @@ $stroke-size: 1px;
 $stroke-color: rgba($light-gray, 0.5);
 $stroke: $stroke-size solid $stroke-color;
 
-$page-padding: 15mm;
+$page-padding: 8mm 12mm;
 $boarder-padding: 25px;
 $spacing-small: $boarder-padding / 2;
 
@@ -15,7 +15,7 @@ $total-page-height: 297mm;
 
 $small-col-width: 180px;
 $header-height: 40mm;
-$footer-height: 3mm;
+$footer-height: 4mm;
 
 $light-weight: 100;
 $regular-weight: 400;
