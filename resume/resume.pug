@@ -57,15 +57,13 @@ include resume-mixins.pug
   #sidebar-container
     #contact
       h2.section-title Personal Data
-      .sidebar-item
-        +dob()
-      <br>
-      .sidebar-item justmejulian.github.io
+      .sidebar-item #{dob}
       <br>
       .sidebar-item
-        +email()
-      .sidebar-item
-        +phone()
+          a(href=`https://${web}`) #{web}
+      <br>
+      .sidebar-item #{email}
+      .sidebar-item #{phone}
       <br>
       .sidebar-item Nationality:
       .sidebar-item South Africa
