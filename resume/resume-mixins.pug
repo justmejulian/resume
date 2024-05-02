@@ -1,6 +1,8 @@
-mixin timeline-item(title, place, address, from_date, to_date)
+mixin timeline-item(title, place, address, from_date, to_date, percent)
   .timeline-item
     h3= title
+      span.percent
+        = percent
       span.date
         if from_date
           = from_date

@@ -45,6 +45,14 @@
     border: $spacing-small solid #ffffff;
   }
 
+ .percent {
+    margin-left: $boarder-padding;
+    // todo replace with var
+    font-size: 8pt;
+    color: $gray;
+    font-weight: $regular-weight;
+  }
+
   .date {
     margin-left: $boarder-padding;
     font-size: 10pt;
