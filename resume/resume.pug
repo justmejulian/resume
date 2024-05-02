@@ -4,23 +4,30 @@ include resume-mixins.pug
 #title
   h1.header-title Julian Visser
   h2.header-subtitle Computer Scientist
-  
+
 #photo
   img(src='./img/me_ZHAW.png')
-            
+
 #container
 
   .timeline-outercontainer
     .timeline-container
       h2.section-title Work Experience
-      
-      +timeline-item("Full Stack Software Engineer","Open Systems","Zurich", "2019", "November 2021")
+
+      +timeline-item("Senior Web Developer","Energy Gruppe Schweiz","Zurich", "Sep 2022", "Present", "80%")
+        :markdown-it
+          - Technical Lead
+          - Coaching Junior Web Developers and ensuring knowledge transfer within the team
+          - Web development: Typescript, ReactJs, NextJs, NodeJs, PHP
+          - Creating assessments and conducting them during the recruitment process
+
+      +timeline-item("Full Stack Software Engineer","Open Systems","Zurich", "Aug 2019", "Nov 2021", "100%")
         :markdown-it
           - Ticketing frontend in a modern React/Redux/PostCSS stack
           - Java/Spring-based API framework, deployed on Docker Swarm
           - 3rd level Engineer in “Mission Control” operations center
-      
-      +timeline-item("Supervisor","Cambridge Assessment English","Winterthur", "2016", "2019")
+
+      +timeline-item("Supervisor","Cambridge Assessment English","Winterthur", "Jul 2016", "Jul 2019")
         :markdown-it
           - Instruct and co-ordinate exams and exam staff
           - Train new supervisors and invigilators
@@ -29,15 +36,18 @@ include resume-mixins.pug
 
       +timeline-item("Apprenticeship IT (SYS)", "Siemens Schweiz AG", "Zurich", "2011", "2014")
         :markdown-it
-          - Departments: Software Deployment, Network Security
-        
+          - Software Deployment, Network Security, IT Support
+
   .timeline-outercontainer
     .timeline-container
       h2.section-title Education
-      
-      +timeline-item("Masters's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2021", "Present")
 
-      +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "2016", "2019")
+      +timeline-item("Masters's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "Sep 2021", "Present")
+        :markdown-it
+          - Humman-Centered Computing Research Group
+          - iOS and watchOS app to measure velocity during barbell exercises
+
+      +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "Sep 2016", " Jul 2019")
         :markdown-it
           - Bachelor thesis: Full Stack JavaScript PWA using React and Node
           - Major: Mobile App Development and Software Security
@@ -64,18 +74,18 @@ include resume-mixins.pug
       .sidebar-item Nationality:
       .sidebar-item South Africa
       .sidebar-item Switzerland
-    
+
     #language
       .container
         h2.section-title Languages
         .sidebar-item English (Native)
         .sidebar-item German (Native)
-    
+
     #hobby
       .container
         h2.section-title Hobbies
-        .sidebar-item Crossfit, hiking, running, surfing, reading
-        
+        .sidebar-item Hiking, running, swimming, cycling, Crossfit, reading
+
     #references
       .container
         h2.section-title references
