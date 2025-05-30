@@ -3,26 +3,28 @@ include ../private-mixins.pug
 #title
   h1.header-title Julian Visser
   #contact
-    .contact-item.contact-item-with-border
-      +dob()
+    .contact-item.contact-item-with-border #{dob}
     //.contact-item.contact-item-with-border
     .contact-item
-      +web()
-    //- .contact-item.contact-item-with-border
-    //-   +email()
-    //- .contact-item
-    //-   +phone()
+        a(href=`https://${web}`) #{web}
 
 #container    
-  #date (Date)
+  // Todo
+  //- #date (Date)
+  #date 15.08.2022
 
   #hiring
-    .hiring-item  (Name of Hiring Mangager, Title)
-    .hiring-item  (Name of Company)
-    .hiring-item  (Address)
-    .hiring-item  (City)
-            
+    // Todo
+    //- .hiring-item  (Name of Hiring Mangager, Title)
+    //- .hiring-item  (Name of Company)
+    //- .hiring-item  (Address)
+    //- .hiring-item  (City)
+    .hiring-item 9T Labs
+    .hiring-item Zurich, Switzerland
+
+  // Todo     
   #greeting To Whom It May Concern
+  //- #greeting Dear 
   
   #text
     include:markdown-it ./md-files/real.md

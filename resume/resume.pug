@@ -14,7 +14,11 @@ include resume-mixins.pug
     .timeline-container
       h2.section-title Work Experience
 
-      +timeline-item("Senior Web Developer","Energy Gruppe Schweiz","Zurich", "Sep 2022", "Present", "80%")
+      +timeline-item("Professional Software Developer","GARDENA digital hub Zürich","Zurich", "Jan 2025", "Present", "100%")
+        :markdown-it
+          - Web Development: EmberJs, Kotlin/Vert.x, Java/Spring Boot
+
+      +timeline-item("Senior Web Developer","Energy Gruppe Schweiz","Zurich", "Sep 2022", "Dec 2024", "80%")
         :markdown-it
           - Technical Lead
           - Coaching Junior Web Developers and ensuring knowledge transfer within the team
@@ -36,37 +40,30 @@ include resume-mixins.pug
 
       +timeline-item("Apprenticeship IT (SYS)", "Siemens Schweiz AG", "Zurich", "2011", "2014")
         :markdown-it
-          - Software Deployment, Network Security, IT Support
 
   .timeline-outercontainer
     .timeline-container
       h2.section-title Education
 
-      +timeline-item("Masters's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "Sep 2021", "Present")
+      +timeline-item("Masters's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "Sep 2021", "Feb 2025")
         :markdown-it
-          - Humman-Centered Computing Research Group
-          - iOS and watchOS app to measure velocity during barbell exercises
+          - Master thesis: iOS and watchOS app to measure velocity during barbell exercises
 
       +timeline-item("Bachelor's degree Computer Science", "ZHAW School of Engineering", "Winterthur", "Sep 2016", " Jul 2019")
         :markdown-it
           - Bachelor thesis: Full Stack JavaScript PWA using React and Node
-          - Major: Mobile App Development and Software Security
 
       +timeline-item("Higher School Certificate", "Berufsmaturitätsschule BMZ", "Zurich", "2011", "2014")
         :markdown-it
-      
+
       +timeline-item("Vocational school", "Technische Berufsschule TBZ", "Zurich", "2011", "2014")
         :markdown-it
-          - IPA: Out-of-band management using pfSense
 
 #sidebar
   #sidebar-container
     #contact
       h2.section-title Personal Data
       .sidebar-item #{dob}
-      <br>
-      .sidebar-item
-          a(href=`https://${web}`) #{web}
       <br>
       .sidebar-item #{email}
       .sidebar-item #{phone}
@@ -80,11 +77,6 @@ include resume-mixins.pug
         h2.section-title Languages
         .sidebar-item English (Native)
         .sidebar-item German (Native)
-
-    #hobby
-      .container
-        h2.section-title Hobbies
-        .sidebar-item Hiking, running, swimming, cycling, Crossfit, reading
 
     #references
       .container
